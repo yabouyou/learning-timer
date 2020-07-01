@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Website Blocker",
+    "version": "0.1.0",
+    "permissions": ["<all_urls>","webRequest","webRequestBlocking", "alarms"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "browser_action":{
+        "default_icon": "timer.png",
+        "default_popup": "popup.html",
+        "default_title": "Learning Timer"
+    },
+    "web_accessible_resources": [
+        "redir_page.html"
+    ]
+}

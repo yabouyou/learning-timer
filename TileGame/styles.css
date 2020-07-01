@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+      --transformations0: ;
+      --transformations1: ;
+      --transformations2: ;
+      --transformations3: ;
+      --transformations4: ;
+      --transformations5: ;
+      --transformations6: ;
+      --transformations7: ;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    background: grey;
+  }
+  
+  .memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+  .memory-card {
+    width: calc(33.333% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+  
+  .memory-card.slide0{
+    transform: var(--transformations0);
+  }
+  .memory-card.slide1{
+    transform: var(--transformations1);
+  }
+  .memory-card.slide2{
+    transform: var(--transformations2);
+  }
+  .memory-card.slide3{
+    transform: var(--transformations3);
+  }
+  .memory-card.slide4{
+    transform: var(--transformations4);
+  }
+  .memory-card.slide5{
+    transform: var(--transformations5);
+  }
+  .memory-card.slide6{
+    transform: var(--transformations6);
+  }
+  .memory-card.slide7{
+    transform: var(--transformations7);
+  }
+  
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    position: absolute;
+    border-radius: 5px;
+    background: lightgrey;
+    backface-visibility: hidden;
+  }
+  
+  
